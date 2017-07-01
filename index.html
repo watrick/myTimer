@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="angular-timer.min.js"></script>
+    <script type="text/javascript" src="docs.js"></script>
+    <script type="text/javascript" src="dist/assets/js/angular-timer-bower.js"></script>
+    <script type="text/javascript" src="dist/assets/js/angular-timer-all.min.js"></script>
+    <script type="text/javascript" src="docs.js"></script>
+    <script type="text/javascript" src="prettify.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head>
+  <body ng-app="timer-demo" ng-controller="TimerDemoController">
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+      
+      <timer interval="1000">{{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>
+
+      <hr>
+      <timer></timer>
+
+      
+    </div>
+  </body>
+</html>
